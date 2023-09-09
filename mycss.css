@@ -1,0 +1,29 @@
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.heading{
+    color: aliceblue;
+    padding-left: 20px;
+}
+
+
+.mag{
+    padding-top: 60px;
+    top: 50%;
+    left: 50%;
+
+}
+
+.mydiv{
+    background-color: blueviolet;
+    height: auto;
+    width: 100%;
+}
+

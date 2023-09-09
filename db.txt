@@ -1,0 +1,16 @@
+Create Database blogtest;
+
+create table user
+(id int(3), constraint customer_id_pk PRIMARY KEY(id) AUTO_INCREMENT,
+password varchar(200) NOT NULL,
+username varchar(200) NOT NULL,);
+
+create table post
+(id int(3), constraint post_id_pk PRIMARY KEY(id) AUTO_INCREMENT,
+post_name varchar(200) NOT NULL,
+created_date date, 
+post_owner varchar(200), constraint post_post_owner_fk FOREGIN KEY(post_owner)
+references user(username),
+image LONGBLOB,
+description longtext);
+
